@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
-import { Navbar, Container, Nav, Button, Modal, Form } from 'react-bootstrap';
-import { FaEnvelope } from 'react-icons/fa';
-import { FaUser } from 'react-icons/fa';
-import { FaPhone } from 'react-icons/fa';
-import { FaMapMarkerAlt } from 'react-icons/fa';
+// import React, { useState } from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Linkedin, Github, Envelope } from 'react-bootstrap-icons';
+import '../../App.css';
 
 export const NavBar = () => {
-    const [lgShow, setLgShow] = useState(false);
-    const handleClose = () => setLgShow(false);
+
 
     return (
         <Navbar bg="light" className="navcont fixed-top " expand="lg">
@@ -25,13 +22,21 @@ export const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="/" className='navpaths'>Home</Nav.Link>
-                        <Nav.Link href="/" className='navpaths'>About Us</Nav.Link>
-                        <Nav.Link href="/" className='navpaths'>Programs</Nav.Link>
-                        <Nav.Link href="/" className='navpaths'>Heroes</Nav.Link>
-                        <Nav.Link href="/" className='navpaths'>Gallery</Nav.Link>
-                        <Nav.Link href="#!" className='navpaths'>Contact Us</Nav.Link>
+                        <Nav.Link href="#home" className='navpaths'>Home</Nav.Link>
+                        <Nav.Link href="#about" className='navpaths'>About Me</Nav.Link>
+                        <Nav.Link href="#experience" className='navpaths'>Experience</Nav.Link>
+                        <Nav.Link href="#projects" className='navpaths'>Projects</Nav.Link>
+                        {/* <Nav.Link href="#skills" className='navpaths'>Skills</Nav.Link> */}
+                        <Nav.Link href="#education" className='navpaths'>Education</Nav.Link>
+                        <Nav.Link href="#contact" className='navpaths'>Contact Me</Nav.Link>
                     </Nav>
+                    <span>
+                        <div classname="links">
+                            <a href="https://www.linkedin.com/in/neeharika-s/"><Linkedin /></a>
+                            <a href="https://github.com/Neha220803"><Github /></a>
+                            <a href="https://www.gmail.com"><Envelope /></a>
+                        </div>
+                    </span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
