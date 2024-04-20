@@ -26,4 +26,11 @@
     bottom: -120px;
     white-space: nowrap;
     color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+}
+
+.imgCont {
+    z-index: 1;
+    position: relative;
 }
