@@ -1,13 +1,13 @@
 // import React, { useState } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Linkedin, Github, Envelope } from 'react-bootstrap-icons';
-import '../../App.css';
+import './NavBarComp.css';
 
 export const NavBar = () => {
 
 
     return (
-        <Navbar bg="light" className="navcont fixed-top " expand="lg">
+        <Navbar bg="light" className="navcont fixed-top d-felx" expand="lg">
             <Container>
                 <Navbar.Brand href="/">
                     {/* <img
@@ -31,10 +31,10 @@ export const NavBar = () => {
                         <Nav.Link href="#contact" className='navpaths'>Contact Me</Nav.Link>
                     </Nav>
                     <span>
-                        <div classname="links">
-                            <a href="https://www.linkedin.com/in/neeharika-s/"><Linkedin /></a>
-                            <a href="https://github.com/Neha220803"><Github /></a>
-                            <a href="https://www.gmail.com"><Envelope /></a>
+                        <div className="links">
+                            <a href="https://www.linkedin.com/in/neeharika-s/"><Linkedin className='icon' /></a>
+                            <a href="https://github.com/Neha220803"><Github className='icon' /></a>
+                            <a href="https://www.gmail.com"><Envelope className='icon' /></a>
                         </div>
                     </span>
                 </Navbar.Collapse>

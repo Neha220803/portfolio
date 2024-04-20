@@ -1,0 +1,29 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    overflow: hidden;
+    position: relative;
+
+    .textCont {
+        height: 100%;
+        gap: 40px;
+
+        h2 {
+            font-size: 30px;
+            color: rebeccapurple;
+            letter-spacing: 5px;
+        }
+
+        h1 {
+            font-size: 88px;
+        }
+    }
+}
+
+.slideText {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+}
