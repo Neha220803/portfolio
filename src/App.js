@@ -1,4 +1,5 @@
 import './App.css';
+import AboutPages from './components/about/AboutPages';
 import ContactPage from './components/contact/ContactPage';
 import EducationPage from './components/edu/EducationPage';
 import ExpiriencePage from './components/exp/ExpiriencePage';
@@ -12,10 +13,13 @@ function App() {
     <div>
       <NavBar />
       <section><HeroPage /></section>
-      <section><ExpiriencePage /></section>
-      <section><ProjectPage /></section>
+      <section className="d-flex align-items-center justify-content-center flex-column">
+        <AboutPages />
+      </section>
+      <section ><ExpiriencePage /></section>
+      <section className="d-flex align-items-center justify-content-center flex-column"><ProjectPage /></section>
       <SkillsPage />
-      <section><EducationPage /></section>
+      <section ><EducationPage /></section>
       <section><ContactPage /></section>
     </div>
   );
