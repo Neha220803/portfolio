@@ -1,13 +1,20 @@
 import { Container, Col, Row, Card } from 'react-bootstrap';
 import '../../App.css';
+import cyber from '../../images/about2/cyber.png';
+import web from '../../images/about2/web.png';
+import mobile from '../../images/about2/mobile.png';
+import ui from '../../images/about2/ui.png';
+
+
+
 
 const AboutPages = () => {
     // Data for the cards
     const cardsData = [
-        { title: "Cyber Security Analyst" },
-        { title: "Mern Stack Developer" },
-        { title: "Flutter Developer" },
-        { title: "Designer" }
+        { title: "Cyber Security Analyst", image: cyber },
+        { title: "Mern Stack Developer", image: web },
+        { title: "Flutter Developer", image: mobile },
+        { title: "Designer", image: ui }
     ];
 
     return (
@@ -22,9 +29,10 @@ const AboutPages = () => {
                 <Row className='m-5'>
                     {cardsData.map((card, index) => (
                         <Col lg={3} key={index}>
-                            <Card bg="dark" text="light" border='light' style={{ height: '250px' }}>
+                            <Card bg="transparent" text="light" border='light'>
                                 <Card.Body className="d-flex align-items-center justify-content-center flex-column">
-                                    <Card.Title className="text-center p-2">{card.title}</Card.Title>
+                                    <Card.Img className='card-image mb-3' src={card.image} style={{ height: '170px' }}></Card.Img>
+                                    <Card.Title className="text-center">{card.title}</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>

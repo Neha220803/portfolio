@@ -18,7 +18,8 @@ function App() {
       </section>
       <section ><ExpiriencePage /></section>
       <section className="d-flex align-items-center justify-content-center flex-column"><ProjectPage /></section>
-      <SkillsPage />
+      <section className="d-flex align-items-center justify-content-center flex-column">   <SkillsPage /></section>
+
       <section ><EducationPage /></section>
       <section><ContactPage /></section>
     </div>
