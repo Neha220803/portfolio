@@ -1,0 +1,10 @@
+.contact {
+    height: 100vh;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto !important;
+}
+
+.contactText {
+    gap: 40px;
+}
