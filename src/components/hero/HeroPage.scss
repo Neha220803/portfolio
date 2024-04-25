@@ -15,8 +15,14 @@
         }
 
         h1 {
-            font-size: 88px;
+            font-size: 65px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            line-height: 1;
+            margin-bottom: 20px;
+            display: block;
         }
+
     }
 }
 
@@ -80,4 +86,22 @@
     color: white;
     transition: color 0.3s ease-in-out;
     /* Add transition for smoother color change */
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.txt-rotate .wrap {
+    border-right: 0.08em solid #EEB7D6;
 }

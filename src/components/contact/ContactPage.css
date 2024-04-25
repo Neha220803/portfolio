@@ -8,3 +8,28 @@
 .contactText {
     gap: 40px;
 }
+
+/* Custom CSS to style placeholder text */
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white;
+        /* Adjust opacity as needed */
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.5);
+    /* Adjust opacity as needed */
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 255, 255, 0.5);
+    /* Adjust opacity as needed */
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.5);
+    /* Adjust opacity as needed */
+}

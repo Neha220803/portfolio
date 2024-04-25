@@ -11,7 +11,7 @@ const ExpiriencePage = () => {
     <div>
       <Container className="d-flex align-items-center justify-content-center flex-column">
         <Row className='mt-5 mb-2'>
-          <Col className='each-head display-6'>
+          <Col className='each-head display-6 mt-4'>
             My Experience
           </Col>
         </Row>

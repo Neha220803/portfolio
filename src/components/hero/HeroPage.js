@@ -3,6 +3,7 @@ import heroImg from '../../images/hero.svg';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { Linkedin, Github, Envelope } from 'react-bootstrap-icons';
+import { useState, useEffect } from "react";
 
 
 const textVarient = {
@@ -50,11 +51,52 @@ const sliderVariant = {
 };
 
 const HeroPage = () => {
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [text, setText] = useState('');
+    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [index, setIndex] = useState(1);
+    const toRotate = ["Penetration Tester", "Flutter Developer", "Web Developer", "UI Designer"];
+    const period = 2000;
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+
+        return () => { clearInterval(ticker) };
+    }, [text])
+
+    const tick = () => {
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+        setText(updatedText);
+
+        if (isDeleting) {
+            setDelta(prevDelta => prevDelta / 2);
+        }
+
+        if (!isDeleting && updatedText === fullText) {
+            setIsDeleting(true);
+            setIndex(prevIndex => prevIndex - 1);
+            setDelta(period);
+        } else if (isDeleting && updatedText === '') {
+            setIsDeleting(false);
+            setLoopNum(loopNum + 1);
+            setIndex(1);
+            setDelta(500);
+        } else {
+            setIndex(prevIndex => prevIndex + 1);
+        }
+    }
+
     return (
         <div className='hero py-4'>
             <Container className='d-flex justify-content-center align-items-center mt-5'>
-                <Row>
-                    <Col lg={6}>
+                <Row style={{ width: '100%' }}>
+                    <Col lg={6} style={{ width: '50%' }}>
                         <motion.div className="textCont d-flex flex-column justify-content-center" variants={textVarient} initial="initial"
                             animate="animate">
                             <motion.h2 variants={textVarient} initial="initial"
@@ -68,7 +110,9 @@ const HeroPage = () => {
                             </motion.div>
 
                             <motion.h1 variants={textVarient} initial="initial"
-                                animate="animate">Cyber Security Analyst</motion.h1>
+                                animate="animate">
+                                <span className="txt-rotate" dataPeriod="1000" data-rotate='["Penetration Tester", "Flutter Developer", "Web Developer", "UI Designer" ]'><span className="wrap">{text}</span></span>
+                            </motion.h1>
                             {/* <motion.div variants={textVarient} className='d-felx' initial="initial"
                                 animate="animate">
                                 <Button variant='outline-light' className='p-3 me-4'>See the Latest Works</Button>
@@ -82,7 +126,7 @@ const HeroPage = () => {
                             Web Dev, Penetration Tester, Flutter Developer
                         </motion.div>
                     </Col>
-                    <Col lg={6}>
+                    <Col lg={6} style={{ width: '50%' }}>
                         <motion.div className='imgCont d-flex justify-content-end' variants={imgVarient} initial="initial"
                             animate="animate" >
                             <motion.img className='img-fluid' src={heroImg} alt="" variants={imgVarient} initial="initial"
