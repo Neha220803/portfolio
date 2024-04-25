@@ -22,7 +22,7 @@ const variants = {
 const ContactPage = () => {
     return (
         <div>
-            <Container className='mt-5 justify-content-center align-items-center '>
+            <Container className='mt-5 justify-content-center align-items-center py-5'>
                 <Row className='mt-5'>
                     <Col lg={6} className='d-flex flex-column justify-content-center text-start px-5'>
                         <motion.div className='contactText' variants={variants} >

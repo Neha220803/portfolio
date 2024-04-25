@@ -6,6 +6,7 @@ import web from '../../images/about2/web.png';
 import mobile from '../../images/about2/mobile.png';
 import ui from '../../images/about2/ui.png';
 
+
 const upvariants = {
     initial: {
         y: 500,
@@ -21,6 +22,8 @@ const upvariants = {
     }
 };
 
+
+
 const AboutPages = () => {
     const cardsData = [
         { title: "Cyber Security Analyst", image: cyber },
@@ -33,14 +36,16 @@ const AboutPages = () => {
         <motion.div variants={upvariants} initial="initial" whileInView="animate">
             <Container className="d-flex align-items-center justify-content-center flex-column">
                 <Row>
-                    <div className='each-head'>About me</div>
+                    <motion.div className='each-head display-6 lead'>About me</motion.div>
                 </Row>
-                <Row>
-                    I am one of many things below
+                <Row >
+                    <motion.div className='lead h-6'>
+                        With a knack for quick learning, I've delved into various domains to satiate my thirst for understanding, I love exploring and adapting.
+                    </motion.div>
                 </Row>
                 <Row className='m-5'>
                     {cardsData.map((card, index) => (
-                        <Col lg={3} key={index}>
+                        <Col lg={3} sm={12} key={index}>
                             <Card bg="transparent" text="light" border='light'>
                                 <Card.Body className="d-flex align-items-center justify-content-center flex-column">
                                     <Card.Img className='card-image mb-3' src={card.image} style={{ height: '170px' }}></Card.Img>

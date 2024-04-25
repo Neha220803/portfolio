@@ -6,11 +6,11 @@
 
     .textCont {
         height: 100%;
-        gap: 40px;
+        gap: 30px;
 
         h2 {
             font-size: 30px;
-            color: rebeccapurple;
+            color: #EEB7D6;
             letter-spacing: 5px;
         }
 
@@ -33,4 +33,51 @@
 .imgCont {
     z-index: 1;
     position: relative;
+}
+
+.links {
+    display: inline-block;
+}
+
+.links a {
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid white;
+}
+
+.links a::after {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.links a:hover::after {
+    transform: scale(1);
+
+
+}
+
+.links a:hover .icon {
+    color: black;
+    /* Change icon color to black on hover */
+}
+
+.icon {
+    color: white;
+    transition: color 0.3s ease-in-out;
+    /* Add transition for smoother color change */
 }

@@ -6,6 +6,7 @@ import projImg4 from "../../images/projects/soc.png";
 import projImg5 from "../../images/projects/count.png";
 import projImg6 from "../../images/projects/food.png";
 import colorSharp2 from "../../images/about2/ui2.png";
+import { motion } from 'framer-motion';
 import './ProjectPage.css';
 import '../../App.css';
 const ProjectPage = () => {
@@ -47,7 +48,7 @@ const ProjectPage = () => {
         <Container className="p-5">
             <Row>
                 <Col size={12}>
-                    <h2 className="each-head my-4">Projects</h2>
+                    <h2 className="each-head lead display-6 my-4 d-flex align-items-center justify-content-center">Projects</h2>
                     <Row>
                         {
                             projects.map((project, index) => {
@@ -55,6 +56,7 @@ const ProjectPage = () => {
                                     <ProjectCard
                                         key={index}
                                         {...project}
+                                        index={index}
                                     />
                                 )
                             })
@@ -71,16 +73,22 @@ const ProjectPage = () => {
 
 export default ProjectPage;
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl, index }) => {
+    const delay = index * 0.5;
     return (
         <Col size={12} sm={6} md={4}>
-            <div className="proj-imgbx">
-                <img src={imgUrl} />
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay }}// Apply delay to each card
+                className="mb-4 proj-imgbx"
+            >
+                <img src={imgUrl} alt={title} />
                 <div className="proj-txtx">
                     <h4>{title}</h4>
                     <span>{description}</span>
                 </div>
-            </div>
+            </motion.div>
         </Col>
     )
 };

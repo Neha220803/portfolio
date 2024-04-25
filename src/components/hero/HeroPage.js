@@ -2,6 +2,8 @@ import './HeroPage.scss';
 import heroImg from '../../images/hero.svg';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { Linkedin, Github, Envelope } from 'react-bootstrap-icons';
+
 
 const textVarient = {
     initial: {
@@ -57,13 +59,21 @@ const HeroPage = () => {
                             animate="animate">
                             <motion.h2 variants={textVarient} initial="initial"
                                 animate="animate">NEEHARIKA S</motion.h2>
+
+                            <motion.div className="links" variants={textVarient} initial="initial"
+                                animate="animate">
+                                <a href="https://www.linkedin.com/in/neeharika-s/"><Linkedin className='icon' text='light' /></a>
+                                <a href="https://github.com/Neha220803"><Github className='icon' /></a>
+                                <a href="https://www.gmail.com"><Envelope className='icon' /></a>
+                            </motion.div>
+
                             <motion.h1 variants={textVarient} initial="initial"
                                 animate="animate">Cyber Security Analyst</motion.h1>
-                            <motion.div variants={textVarient} className='d-felx' initial="initial"
+                            {/* <motion.div variants={textVarient} className='d-felx' initial="initial"
                                 animate="animate">
                                 <Button variant='outline-light' className='p-3 me-4'>See the Latest Works</Button>
                                 <Button variant='light p-3'>Contact Me</Button>
-                            </motion.div>
+                            </motion.div> */}
                         </motion.div>
                         <motion.div className='slideText d-flex'
                             variants={sliderVariant}

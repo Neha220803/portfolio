@@ -12,7 +12,7 @@ section {
 
 .each-head {
     color: white;
-    font-size: 50px;
+    /* font-size: 50px; */
     font-family: Inknut Antiqua;
     font-weight: 700;
     word-wrap: break-word

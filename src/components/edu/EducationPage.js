@@ -7,9 +7,9 @@ import kv from '../../images/logos/kv.png';
 const EducationPage = () => {
     return (
         <div>
-            <Container className="d-flex align-items-center justify-content-center flex-column">
+            <Container className="d-flex mt-5 align-items-center justify-content-center flex-column">
                 <Row className='mt-5 mb-2'>
-                    <Col className='each-head '>
+                    <Col className='each-head lead display-6'>
                         My Education
                     </Col>
                 </Row>
