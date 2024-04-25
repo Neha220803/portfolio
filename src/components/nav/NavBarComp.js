@@ -23,7 +23,7 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
                         <Nav.Link href="#home" className='navpaths'>Home</Nav.Link>
-                        {/* <Nav.Link href="#about" className='navpaths'>About Me</Nav.Link> */}
+                        <Nav.Link href="#about" className='navpaths'>About</Nav.Link>
                         <Nav.Link href="#experience" className='navpaths'>Experience</Nav.Link>
                         <Nav.Link href="#projects" className='navpaths'>Projects</Nav.Link>
                         <Nav.Link href="#skills" className='navpaths'>Skills</Nav.Link>

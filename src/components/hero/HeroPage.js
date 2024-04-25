@@ -53,7 +53,7 @@ const HeroPage = () => {
             <Container className='d-flex justify-content-center align-items-center mt-5'>
                 <Row>
                     <Col lg={6}>
-                        <motion.div className="textCont d-flex flex-column justify-content-center" variants={textVarient} initial="initial" 
+                        <motion.div className="textCont d-flex flex-column justify-content-center" variants={textVarient} initial="initial"
                             animate="animate">
                             <motion.h2 variants={textVarient} initial="initial"
                                 animate="animate">NEEHARIKA S</motion.h2>
@@ -73,10 +73,11 @@ const HeroPage = () => {
                         </motion.div>
                     </Col>
                     <Col lg={6}>
-                        <div className='imgCont d-flex justify-content-end'>
+                        <motion.div className='imgCont d-flex justify-content-end' variants={imgVarient} initial="initial"
+                            animate="animate" >
                             <motion.img className='img-fluid' src={heroImg} alt="" variants={imgVarient} initial="initial"
                                 animate="animate" />
-                        </div>
+                        </motion.div>
                     </Col>
                 </Row>
             </Container>

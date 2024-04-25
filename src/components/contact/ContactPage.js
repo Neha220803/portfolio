@@ -23,19 +23,18 @@ const ContactPage = () => {
     return (
         <div>
             <Container className='mt-5 justify-content-center align-items-center '>
-                <Row className='mt-5 '>
-                    <Col lg={6} className='d-flex flex-column justify-content-center'>
+                <Row className='mt-5'>
+                    <Col lg={6} className='d-flex flex-column justify-content-center text-start px-5'>
                         <motion.div className='contactText' variants={variants} >
                             <motion.h1 variants={variants}  >Contact Me</motion.h1>
-                            <motion.div variants={variants} >
+                            <motion.div variants={variants} className='text-start' >
                                 <motion.h2 variants={variants} >Mail</motion.h2>
                                 <motion.span variants={variants} >neeharika.srinivasan@gmail.com</motion.span>
                             </motion.div>
-                            <motion.div variants={variants} >
+                            <motion.div variants={variants} className='text-start'>
                                 <motion.h2 variants={variants} >Address</motion.h2>
                                 <motion.span variants={variants} >Chennai, Tamil Nadu</motion.span>
                             </motion.div>
-
                         </motion.div>
                     </Col>
                     <Col lg={6} className='d-flex flex-column justify-content-center mt-5'>
@@ -53,7 +52,7 @@ const ContactPage = () => {
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control as="textarea" rows={5} />
                             </Form.Group>
-                            <Button variant="primary">Submit</Button>
+                            <Button variant="outline-light">Submit</Button>
                         </motion.Form>
                     </Col>
                 </Row>

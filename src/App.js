@@ -12,16 +12,25 @@ function App() {
   return (
     <div>
       <NavBar />
-      <section><HeroPage /></section>
-      <section className="d-flex align-items-center justify-content-center flex-column">
+      <section id="home"><HeroPage /></section>
+      <section id="about" className="d-flex align-items-center justify-content-center flex-column">
         <AboutPages />
       </section>
-      <section ><ExpiriencePage /></section>
-      <section className="d-flex align-items-center justify-content-center flex-column"><ProjectPage /></section>
-      <section className="d-flex align-items-center justify-content-center flex-column">   <SkillsPage /></section>
-
-      <section ><EducationPage /></section>
-      <section><ContactPage /></section>
+      <section id="experience" >
+        <ExpiriencePage />
+      </section>
+      <section id="projects" className="d-flex align-items-center justify-content-center flex-column">
+        <ProjectPage />
+      </section>
+      <section id="skills" className="d-flex align-items-center justify-content-center flex-column">
+        <SkillsPage />
+      </section>
+      <section id="education">
+        <EducationPage />
+      </section>
+      <section id="contact" >
+        <ContactPage />
+      </section>
     </div>
   );
 }
