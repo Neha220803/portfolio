@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { Linkedin, Github, Envelope } from 'react-bootstrap-icons';
 import { useState, useEffect } from "react";
 
-
 const textVarient = {
     initial: {
         x: -500,
