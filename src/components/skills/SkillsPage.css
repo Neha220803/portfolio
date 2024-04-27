@@ -1,4 +1,19 @@
 .image-round {
-    border-radius: 50%;
+    border-radius: 50% !important;
     border: 2px solid white !important;
+    height: 150px !important;
+    width: 150px !important;
+}
+
+.hover-card-container {
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+    .image-round {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
 }

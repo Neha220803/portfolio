@@ -1,5 +1,6 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import './SkillsPage.css';
 
 import htmlImage from '../../images/tech/html.png';
 import cssImage from '../../images/tech/css.png';
@@ -34,23 +35,21 @@ const SkillsPage = () => {
         <div>
             <Container className="d-flex align-items-center justify-content-center flex-column">
                 <Row>
-                    <div className="each-head lead display-6">
-                        Technicall Skills
+                    <div className="each-head lead display-6 my-4 ">
+                        Technical Skills
                     </div>
                 </Row>
                 <Row className='mt-1'>
                     {cardsData.map((card, index) => (
-
-                        <Col lg={3} key={index} className='mb-3 d-flex align-items-center justify-content-center'>
+                        <Col xs={4} sm={4} md={3} lg={3} key={index} className='mb-3 d-flex align-items-center justify-content-center'>
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.2 * index }}// Apply delay to each card
-
                             >
-                                <Card bg="transparent" text="light" className='p-2' border='light' style={{ height: '150px', width: '150px', borderRadius: '50%' }}>
+                                <Card bg="transparent" text="light" className='image-round p-2' >
                                     <Card.Body className="d-flex align-items-center justify-content-center flex-column">
-                                        {card.image && <Card.Img variant="top" src={card.image} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
+                                        {card.image && <Card.Img variant="top" src={card.image} />}
                                     </Card.Body>
                                 </Card>
                             </motion.div>

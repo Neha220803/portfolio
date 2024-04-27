@@ -2,12 +2,13 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../../images/nlogo.png';
 import './NavBarComp.css';
+import { Download } from 'react-bootstrap-icons';
 
 export const NavBar = () => {
 
 
     return (
-        <Navbar bg="light" className="navcont fixed-top d-felx" expand="lg">
+        <Navbar className="navcont fixed-top" expand="lg">
             <Container>
                 <Navbar.Brand href="/">
                     <img
@@ -30,7 +31,7 @@ export const NavBar = () => {
                         <Nav.Link href="#education" className='navpaths'>Education</Nav.Link>
                         <Nav.Link href="#contact" className='navpaths'>Contact Me</Nav.Link>
                     </Nav>
-
+                    <span className='navbar-text'><a href='resume.pdf' download><button className="vvd px-3 py-2"><span><Download className='me-2' />Resume</span></button></a></span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

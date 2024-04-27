@@ -9,7 +9,7 @@
         gap: 30px;
 
         h2 {
-            font-size: 30px;
+            font-size: 1.8rem;
             color: #EEB7D6;
             letter-spacing: 5px;
         }
@@ -21,6 +21,17 @@
             line-height: 1;
             margin-bottom: 20px;
             display: block;
+        }
+
+        h3 {
+            font-size: 45px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            // line-height: 1;
+            margin: 0;
+            padding: 0;
+            display: block;
+
         }
 
     }
@@ -79,13 +90,11 @@
 
 .links a:hover .icon {
     color: black;
-    /* Change icon color to black on hover */
 }
 
 .icon {
     color: white;
     transition: color 0.3s ease-in-out;
-    /* Add transition for smoother color change */
 }
 
 @keyframes updown {
@@ -103,5 +112,53 @@
 }
 
 .txt-rotate .wrap {
-    border-right: 0.08em solid #EEB7D6;
+    border-right: 0.08em solid #d773ac;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+        padding-top: 50px !important;
+    }
+
+    h3 {
+        font-size: 33px !important;
+    }
+
+    .imgCont {
+        z-index: 1;
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .textCont {
+        gap: 20px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 28px !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .textCont {
+        padding-top: 90px !important;
+        padding-left: 20px !important;
+        gap: 20px !important;
+    }
 }

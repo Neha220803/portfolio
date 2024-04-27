@@ -16,21 +16,22 @@ function App() {
       <section id="about" className="d-flex align-items-center justify-content-center flex-column">
         <AboutPages />
       </section>
-      <section id="experience" >
+      <div id="experience" className='sectiond' >
         <ExpiriencePage />
-      </section>
-      <section id="projects" className="d-flex align-items-center justify-content-center flex-column">
+      </div>
+      <div id="projects" className="d-flex align-items-center justify-content-center flex-column sectiond">
         <ProjectPage />
-      </section>
+      </div>
       <section id="skills" className="d-flex align-items-center justify-content-center flex-column">
         <SkillsPage />
       </section>
-      <section id="education">
-        <EducationPage />
-      </section>
-      <section id="contact" >
-        <ContactPage />
-      </section>
+
+      {/* <div id="education" className='sectiond' > */}
+      <section id="education" ><EducationPage /></section>
+      {/* </div> */}
+      <section id="contact" className=" d-flex align-items-center justify-content-center flex-column"> <ContactPage /></section>
+
+
     </div>
   );
 }

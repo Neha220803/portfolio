@@ -6,14 +6,14 @@
 }
 
 .contactText {
-    gap: 40px;
+    gap: 40px !important;
 }
 
 /* Custom CSS to style placeholder text */
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: white;
-        /* Adjust opacity as needed */
+    /* Adjust opacity as needed */
 }
 
 ::-moz-placeholder {
@@ -32,4 +32,24 @@
     /* Firefox 18- */
     color: rgba(255, 255, 255, 0.5);
     /* Adjust opacity as needed */
+}
+
+@media (max-width: 1024px) {
+    .hide-md {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .show-md {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .contactText {
+        text-align: center;
+    }
+
 }
