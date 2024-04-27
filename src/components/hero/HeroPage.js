@@ -127,7 +127,7 @@ const HeroPage = () => {
                             Web Dev, Penetration Tester, Flutter Developer
                         </motion.div>
                     </Col>
-                    <Col lg={6} sm={12} style={{ width: '40%' }} className='d-none d-sm-block'>
+                    <Col lg={6} sm={12} style={{ width: '40%' }} className='d-none d-sm-block mt-4'>
                         <motion.div className='imgCont d-flex justify-content-end' variants={imgVarient} initial="initial"
                             animate="animate" >
                             <motion.img className='img-fluid' src={heroImg} alt="" variants={imgVarient} initial="initial"
