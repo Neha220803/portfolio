@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
 .image-round {
     border-radius: 50% !important;
     border: 2px solid white !important;
     height: 150px !important;
     width: 150px !important;
+    position: relative;
+    /* Add position relative to image */
 }
 
 .hover-card-container {
@@ -15,5 +19,83 @@
         height: 100px !important;
         width: 100px !important;
     }
+}
 
+.skills-imgbx {
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-imgbx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* Ensure image appears below overlay */
+}
+
+.skills-imgbx::before {
+    content: "";
+    background: white;
+    opacity: 0.85;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    border-radius: 50%;
+
+}
+
+.skills-imgbx:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.image-round:hover {
+    opacity: 0.8 !important;
+}
+
+.skills-txtx {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    color: black;
+    z-index: 2;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    font-family: "Inknut Antiqua";
+}
+
+.skills-imgbx:hover .skills-txtx {
+    opacity: 1;
+
+}
+
+@media screen and (max-width: 576px) {
+    .skills-txtx {
+        font-size: 18px !important;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-txtx {
+        font-size: 16px !important;
+        /* Adjust font size for even smaller screens */
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .skills-txtx {
+        font-size: 14px !important;
+        /* Adjust font size for very small screens */
+    }
 }

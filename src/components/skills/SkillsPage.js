@@ -23,7 +23,7 @@ const SkillsPage = () => {
         { title: "React", image: reactImage },
         { title: "Flutter", image: flutterImage },
         { title: "Dart", image: dartImage },
-        { title: "Node", image: nodeImage },
+        { title: "Node JS", image: nodeImage },
         { title: "Firebase", image: firebaseImage },
         { title: "MongoDB", image: mongoImage },
         { title: "MySQL", image: mysqlImage },
@@ -46,10 +46,14 @@ const SkillsPage = () => {
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.2 * index }}// Apply delay to each card
+                                className='skills-imgbx'
                             >
-                                <Card bg="transparent" text="light" className='image-round p-2' >
+                                <Card bg="transparent" text="light" className='image-round p-2 ' >
                                     <Card.Body className="d-flex align-items-center justify-content-center flex-column">
                                         {card.image && <Card.Img variant="top" src={card.image} />}
+                                        <div className="skills-txtx mx-auto">
+                                            {card.title}
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </motion.div>

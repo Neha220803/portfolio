@@ -59,13 +59,11 @@ const ProjectPage = () => {
                     {
                         projects.map((project, index) => {
                             return (
-
                                 <ProjectCard
                                     key={index}
                                     {...project}
                                     index={index}
                                 />
-
                             )
                         })
                     }

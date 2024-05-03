@@ -1,16 +1,18 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../../images/nlogo.png';
 import './NavBarComp.css';
 import { Download } from 'react-bootstrap-icons';
 
 export const NavBar = () => {
+    const [expanded, setExpanded] = useState(false);
+    const closeNavbar = () => setExpanded(false);
 
 
     return (
-        <Navbar className="navcont fixed-top" expand="lg">
+        <Navbar className="navcont fixed-top" expand="lg" expanded={expanded}>
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/" style={{ fontFamily: 'Inknut Antiqua' }}>
                     <img
                         alt=""
                         src={logo}
@@ -20,18 +22,18 @@ export const NavBar = () => {
                     />{'   '}
                     - Portfolio
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="#home" className='navpaths nav-text'>Home</Nav.Link>
-                        <Nav.Link href="#about" className='navpaths'>About</Nav.Link>
-                        <Nav.Link href="#experience" className='navpaths'>Experience</Nav.Link>
-                        <Nav.Link href="#projects" className='navpaths'>Projects</Nav.Link>
-                        <Nav.Link href="#skills" className='navpaths'>Skills</Nav.Link>
-                        <Nav.Link href="#education" className='navpaths'>Education</Nav.Link>
-                        <Nav.Link href="#contact" className='navpaths'>Contact Me</Nav.Link>
+                        <Nav.Link href="#home" className='navpaths nav-text' onClick={closeNavbar}>Home</Nav.Link>
+                        <Nav.Link href="#about" className='navpaths ' onClick={closeNavbar}>About</Nav.Link>
+                        <Nav.Link href="#experience" className='navpaths' onClick={closeNavbar}>Experience</Nav.Link>
+                        <Nav.Link href="#projects" className='navpaths' onClick={closeNavbar}>Projects</Nav.Link>
+                        <Nav.Link href="#skills" className='navpaths' onClick={closeNavbar}>Skills</Nav.Link>
+                        <Nav.Link href="#education" className='navpaths' onClick={closeNavbar}>Education</Nav.Link>
+                        <Nav.Link href="#contact" className='navpaths' onClick={closeNavbar}>Contact Me</Nav.Link>
                     </Nav>
-                    <span className='navbar-text'><a href='resume.pdf' download><button className="vvd px-3 py-2"><span><Download className='me-2' />Resume</span></button></a></span>
+                    <span className='navbar-text'><a href='resume.pdf' download><button className="vvd px-3 py-2" onClick={closeNavbar}><span><Download className='me-2' />Resume</span></button></a></span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
