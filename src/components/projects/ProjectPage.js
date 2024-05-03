@@ -54,7 +54,7 @@ const ProjectPage = () => {
     return (
         <Container className="p-5">
             <Row>
-                <h2 className="each-head lead display-6 my-4 d-flex align-items-center justify-content-center">Projects</h2>
+                <div className="each-head lead display-6 my-4 d-flex align-items-center justify-content-center">Projects</div>
                 <Row>
                     {
                         projects.map((project, index) => {
@@ -87,7 +87,7 @@ export const ProjectCard = ({ title, description, imgUrl, projUrl, index }) => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay }}
-                className="mb-4 proj-imgbx"
+                className="mb-4 proj-imgbx project"
             >
                 <img src={imgUrl} alt={title} />
                 <div className="proj-txtx px-2">
@@ -99,7 +99,6 @@ export const ProjectCard = ({ title, description, imgUrl, projUrl, index }) => {
                     </a>
                     <span >{description}</span>
                 </div>
-
             </motion.div>
         </Col>
     )

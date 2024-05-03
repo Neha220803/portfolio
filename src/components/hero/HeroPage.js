@@ -105,7 +105,7 @@ const HeroPage = () => {
                                 animate="animate">
                                 <a href="https://www.linkedin.com/in/neeharika-s/"><Linkedin className='icon' text='light' /></a>
                                 <a href="https://github.com/Neha220803"><Github className='icon' /></a>
-                                <a href="https://www.gmail.com"><Envelope className='icon' /></a>
+                                <a href="mailto:neeharika.srinivasan@gmail.com"><Envelope className='icon' /></a>
                             </motion.div>
                             <motion.h3>I'm a</motion.h3>
                             <motion.h1 variants={textVarient} initial="initial"

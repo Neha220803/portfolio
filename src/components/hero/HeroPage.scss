@@ -84,8 +84,6 @@
 
 .links a:hover::after {
     transform: scale(1);
-
-
 }
 
 .links a:hover .icon {
@@ -95,6 +93,11 @@
 .icon {
     color: white;
     transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    color: black !important;
+    z-index: 1;
 }
 
 @keyframes updown {

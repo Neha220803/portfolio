@@ -1,8 +1,8 @@
-    .project {
+    /* .project {
         padding: 80px 0;
-        /* position: relative; */
+        position: relative;
         background-color: black;
-    }
+    } */
 
     .project h2 {
         font-size: 45px;
@@ -74,6 +74,8 @@
         color: white !important;
     }
 
+
+
     .proj-txtx a span {
         font-style: italic;
         font-weight: 400 !important;
@@ -104,20 +106,20 @@
 
     @media screen and (max-width: 480px) {
         .project h2 {
-            font-size: 30px;
+            font-size: 30px !important;
         }
 
         .project p {
-            font-size: 14px;
+            font-size: 14px !important;
             width: 80%;
             /* Adjust as needed */
         }
 
-        .proj-txtx h4 {
-            font-size: 20px;
+        .proj-txtx a h4 {
+            font-size: 20px !important;
         }
 
         .proj-txtx span {
-            font-size: 12px;
+            font-size: 12px !important;
         }
     }
