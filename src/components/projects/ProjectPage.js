@@ -11,7 +11,7 @@ import projImg9 from "../../images/projects/tiles.png";
 import projImg10 from "../../images/projects/todo.png";
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import "./ProjectPage.css";
+import "./ProjectPage.css"
 
 const ProjectPage = () => {
     const projects = [
@@ -93,19 +93,19 @@ const ProjectPage = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 p-0 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                            <Nav.Link eventKey="first"><div>Hackathon Projects</div></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                            <Nav.Link eventKey="second"><div>Freelance Projects</div></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                            <Nav.Link eventKey="third"><div>Hobby Projects</div></Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content>
                         <Tab.Pane eventKey="first">
                             <Row>
-                                <h5 className="sub-head text-center mb-4">Hackathon Projects</h5>
+                                {/* <h5 className="sub-head text-center mb-4">Hackathon Projects</h5> */}
                                 {projects.map((project, index) => (
                                     <ProjectCard
                                         key={index}
@@ -116,7 +116,7 @@ const ProjectPage = () => {
                             </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                            <h5 className="sub-head text-center mb-4">Freelance Projects</h5>
+                            {/* <h5 className="sub-head text-center mb-4">Freelance Projects</h5> */}
                             <Row>
                                 {FreelanceProjects.map((project, index) => (
                                     <ProjectCard
@@ -129,7 +129,7 @@ const ProjectPage = () => {
 
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                            <h5 className="sub-head text-center mb-4">Hobby Projects</h5>
+                            {/* <h5 className="sub-head text-center mb-4">Hobby Projects</h5> */}
                             <Row>
                                 {hobbyProjects.map((hobbyProjects, index) => (
                                     <ProjectCard
@@ -170,7 +170,7 @@ export const ProjectCard = ({ title, description, imgUrl, projUrl, index }) => {
                             <div>{title} <FaArrowRight style={{ color: 'white', marginLeft: '5px', verticalAlign: 'middle' }} /></div>
                         </h4>
                     </a>
-                    <span>{description}</span>
+                    <span className="proj-desc">{description}</span>
                 </div>
             </motion.div>
         </Col>

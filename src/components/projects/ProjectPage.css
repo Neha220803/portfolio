@@ -93,10 +93,6 @@
         text-decoration: underline;
     }
 
-    .sub-head {
-        font-family: Inknut Antiqua !important;
-    }
-
 
     /* .background-image-right {
     top: 20%;
@@ -110,7 +106,7 @@
 
     @media screen and (max-width: 480px) {
         .project h2 {
-            font-size: 26px !important;
+            font-size: 30px !important;
         }
 
         .project p {
@@ -126,7 +122,47 @@
         .proj-txtx span {
             font-size: 12px !important;
         }
+
+        .nav.nav-pills {
+            width: 100% !important;
+        }
     }
+
+    @media screen and (max-width: 768px) {
+        .project h2 {
+            font-size: 28px !important;
+        }
+
+        .project p {
+            font-size: 16px !important;
+            width: 80%;
+            /* Adjust as needed */
+        }
+
+        .proj-txtx a h4 {
+            font-size: 20px !important;
+
+        }
+
+        .proj-txtx span {
+            font-size: 14px !important;
+        }
+
+        .nav.nav-pills {
+            width: 100% !important;
+        }
+    }
+
+    /* @media screen and (max-width: 992px) {
+
+
+        .nav.nav-pills {
+            width: 75% !important;
+        }
+    } */
+
+
+
 
     .nav.nav-pills {
         width: 50%;
