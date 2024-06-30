@@ -18,7 +18,7 @@ const EducationPage = () => {
                         className="vertical-timeline-element--work"
                         contentArrowStyle={{ borderRight: "7px solid  white" }}
                         contentStyle={{ borderTop: "3px solid  white", background: "#1D1836", color: "white" }}
-                        date="Jan 2024 - May 2024"
+                        date="2021 - 2025"
                         iconStyle={{ background: "#1D1836", color: "#fff" }}
                         icon={<img src={sjce} alt="icon" style={{ width: '100%', height: '100%', borderRadius: '50%', padding: '5px' }} />}
                     >
@@ -39,7 +39,7 @@ const EducationPage = () => {
                         className="vertical-timeline-element--work"
                         contentArrowStyle={{ borderRight: "7px solid  white" }}
                         contentStyle={{ borderTop: "3px solid  white", background: "#1D1836", color: "white" }}
-                        date="2019"
+                        date="2021"
                         iconStyle={{ background: "#1D1836", color: "#fff" }}
                         icon={<img src={kv} alt="icon" style={{ width: '100%', height: '100%', borderRadius: '50%', padding: '3px' }} />}
                     >
