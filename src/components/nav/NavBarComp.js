@@ -33,7 +33,7 @@ export const NavBar = () => {
                         <Nav.Link href="#education" className='navpaths' onClick={closeNavbar}>Education</Nav.Link>
                         <Nav.Link href="#contact" className='navpaths' onClick={closeNavbar}>Contact Me</Nav.Link>
                     </Nav>
-                    <span className='navbar-text d-flex align-items-center justify-content-center'><a href='resume.pdf' download><button className="vvd px-3 py-2" onClick={closeNavbar}><span><Download className='me-2' />Resume</span></button></a></span>
+                    <span className='navbar-text d-flex align-items-center justify-content-center'><a href='neeharika-resume.pdf' download><button className="vvd px-3 py-2" onClick={closeNavbar}><span><Download className='me-2' />Resume</span></button></a></span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

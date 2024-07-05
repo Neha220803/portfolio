@@ -16,6 +16,23 @@ const ExpiriencePage = () => {
           </Col>
         </Row>
         <VerticalTimeline lineColor={"white"}>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentArrowStyle={{ borderRight: "7px solid  white" }}
+            contentStyle={{ borderTop: "3px solid  white", background: "#1D1836", color: "white" }}
+            date="June 2024 - Present"
+            iconStyle={{ background: "#1D1836", color: "#fff" }}
+            icon={<img src={smart} alt="icon" style={{ width: '100%', height: '100%', borderRadius: '50%', padding: '3px' }} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Flutter Developer Intern
+            </h3>
+            <p>
+              nStore Retech Pvt. Ltd.
+            </p>
+          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentArrowStyle={{ borderRight: "7px solid  white" }}
@@ -32,7 +49,7 @@ const ExpiriencePage = () => {
             </p>
           </VerticalTimelineElement>
 
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentArrowStyle={{ borderRight: "7px solid  white" }}
             contentStyle={{ borderTop: "3px solid  white", background: "#1D1836", color: "white" }}
@@ -46,7 +63,7 @@ const ExpiriencePage = () => {
             <p>
               Smarther Technologies Pvt. Ltd.
             </p>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

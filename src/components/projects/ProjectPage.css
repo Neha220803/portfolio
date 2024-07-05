@@ -126,9 +126,15 @@
         .nav.nav-pills {
             width: 100% !important;
         }
+
+        .project-heads {
+            font-size: 13px !important;
+        }
     }
 
-    @media screen and (max-width: 768px) {
+    /* 480 to 530 */
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
         .project h2 {
             font-size: 28px !important;
         }
@@ -151,6 +157,23 @@
         .nav.nav-pills {
             width: 100% !important;
         }
+
+        .project-heads {
+
+            font-size: 13px !important;
+        }
+
+        .nav.nav-pills {
+            width: 85% !important;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .nav.nav-pills {
+            width: 90% !important;
+        }
+
+
     }
 
     /* @media screen and (max-width: 992px) {
@@ -161,11 +184,14 @@
         }
     } */
 
+    .project-heads {
+        font-size: 16px;
+    }
 
 
 
     .nav.nav-pills {
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         border-radius: 50px;
         background-color: rgb(255 255 255 / 10%);

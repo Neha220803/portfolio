@@ -93,13 +93,13 @@ const ProjectPage = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 p-0 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first"><div>Hackathon Projects</div></Nav.Link>
+                            <Nav.Link eventKey="first"><div className="project-heads">Hackathon Projects</div></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second"><div>Freelance Projects</div></Nav.Link>
+                            <Nav.Link eventKey="second"><div className="project-heads">Freelance Projects</div></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third"><div>Hobby Projects</div></Nav.Link>
+                            <Nav.Link eventKey="third"><div className="project-heads">Hobby Projects</div></Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content>
