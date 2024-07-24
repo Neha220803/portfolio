@@ -3,7 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Container, Col, Row } from 'react-bootstrap';
 import '../../index.css';
 import hebe from '../../images/logos/hebe.png';
-import smart from '../../images/logos/smarther.png';
+import smart from '../../images/logos/nstore.png';
 import cyber from '../../images/logos/cs.png';
 
 const ExpiriencePage = () => {
@@ -21,7 +21,7 @@ const ExpiriencePage = () => {
             className="vertical-timeline-element--work"
             contentArrowStyle={{ borderRight: "7px solid  white" }}
             contentStyle={{ borderTop: "3px solid  white", background: "#1D1836", color: "white" }}
-            date="June 2024 - Present"
+            date="June 2024 - July 2024"
             iconStyle={{ background: "#1D1836", color: "#fff" }}
             icon={<img src={smart} alt="icon" style={{ width: '100%', height: '100%', borderRadius: '50%', padding: '3px' }} />}
           >
