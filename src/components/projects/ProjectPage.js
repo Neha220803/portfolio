@@ -1,8 +1,8 @@
-import { Container, Row, Col, Button, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import projImg1 from "../../images/projects/she.png";
 import projImg2 from "../../images/projects/Phistrap.png";
 import projImg3 from "../../images/projects/plas.png";
-import projImg4 from "../../images/projects/soc.png";
+// import projImg4 from "../../images/projects/soc.png";
 import projImg5 from "../../images/projects/count.png";
 import projImg6 from "../../images/projects/food2.png";
 import projImg7 from "../../images/projects/pjsym.png";

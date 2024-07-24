@@ -9,6 +9,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "emailjs-com": "^3.2.0",
     "firebase": "^10.11.1",
     "firebase-tools": "^13.7.5",
     "framer-motion": "^11.1.3",

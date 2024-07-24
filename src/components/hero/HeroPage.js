@@ -1,6 +1,6 @@
 import './HeroPage.scss';
 import heroImg from '../../images/hero.svg';
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { Linkedin, Github, Envelope } from 'react-bootstrap-icons';
 import { useState, useEffect } from "react";
